@@ -532,11 +532,15 @@ require('lazy').setup {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
+        -- golang
         gopls = {},
+        -- python
         jedi_language_server = {},
-        ruff_lsp = {},
+        -- ruff_lsp = {},
+        ruff = {},
         mypy = {},
         black = {},
+        -- rust
         rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -544,7 +548,11 @@ require('lazy').setup {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
+        -- JS/TS
         tsserver = {},
+        -- bash doesn't seem to work
+        bashls = {},
+        shellcheck = {},
         --
 
         lua_ls = {
@@ -823,3 +831,4 @@ require('lazy').setup {
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 --
+vim.g.python3_host_prog = '/usr/bin/python3'
