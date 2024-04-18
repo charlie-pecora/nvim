@@ -550,6 +550,7 @@ require('lazy').setup {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- JS/TS
         tsserver = {},
+        eslint = {},
         -- bash doesn't seem to work
         bashls = {},
         shellcheck = {},
@@ -614,6 +615,7 @@ require('lazy').setup {
     end,
   },
 
+  --[[
   { -- Autoformat
     'stevearc/conform.nvim',
     opts = {
@@ -633,7 +635,8 @@ require('lazy').setup {
       },
     },
   },
-
+]]
+  --
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
