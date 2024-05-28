@@ -649,7 +649,7 @@ require('lazy').setup {
     lint.linters_by_ft = {
       javascript = { "eslint_d" },
       typescript = { "eslint_d" },
-      python = { "ruff", "mpypy" },
+      python = { "ruff", "mypy" },
       go = { "golangcilint" },
     }
 
