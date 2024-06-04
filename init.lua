@@ -90,6 +90,10 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- don't wrap overflowing lines
+-- use `:set wrap` to change in the editor`
+vim.opt.wrap = false
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -535,7 +539,7 @@ require('lazy').setup {
         -- golang
         gopls = {},
         -- python
-        jedi_language_server = {},
+        basedpyright = {},
         -- ruff_lsp = {},
         ruff = {},
         mypy = {},
