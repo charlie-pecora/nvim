@@ -539,7 +539,7 @@ require('lazy').setup {
         -- golang
         gopls = {},
         -- python
-        basedpyright = {},
+        pyright = {},
         -- ruff_lsp = {},
         ruff = {},
         mypy = {},
