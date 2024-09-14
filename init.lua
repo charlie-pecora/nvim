@@ -651,8 +651,8 @@ require('lazy').setup {
     local lint = require("lint")
 
     lint.linters_by_ft = {
-      javascript = { "eslint_d" },
-      typescript = { "eslint_d" },
+      javascript = { "eslint" },
+      typescript = { "eslint" },
       python = { "ruff", "mypy" },
       go = { "golangcilint" },
     }
